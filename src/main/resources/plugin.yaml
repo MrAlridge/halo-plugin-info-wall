@@ -4,19 +4,23 @@ apiVersion: plugin.halo.run/v1alpha1
 kind: Plugin
 metadata:
   # The name defines how the plugin is invoked, A unique name
-  name: starter
+  name: info-wall
 spec:
   enabled: true
   requires: ">=2.20.0"
   author:
-    name: Halo
-    website: https://github.com/halo-dev
+    name: F10atingHeart
+    website: https://f10atingheart.xyz
   logo: logo.png
-  homepage: https://github.com/halo-dev/plugin-starter#readme
-  repo: https://github.com/halo-dev/plugin-starter
-  issues: https://github.com/halo-dev/plugin-starter/issues
-  displayName: "插件快速开始模板"
-  description: "这是一个插件快速开始模板"
+  # 设置表单的名称
+  settingName: info-wall-settings
+  # 插件存储的ConfigMap名称
+  configMapName: info-wall-configmap
+  homepage: https://github.com/MrAlridge/halo-plugin-info-wall#readme
+  repo: https://github.com/MrAlridge/halo-plugin-info-wall
+  issues: https://github.com/MrAlridge/halo-plugin-info-wall/issues
+  displayName: "信息墙"
+  description: "本插件提供了一种多功能信息墙页面"
   license:
     - name: "GPL-3.0"
       url: "https://github.com/halo-dev/plugin-starter/blob/main/LICENSE"
